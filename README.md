@@ -16,6 +16,8 @@ Replace the placeholder images in `src/assets/` with your official logos:
 - `logo.png` – navbar logo
 - `footer_logo.png` – footer logo
 
+**SEO / Social:** For favicon and social preview (Open Graph, Twitter), copy `logo.png` into the `public/` folder so it is served at `/logo.png`. The site’s meta tags and sitemap point to `https://krishvaglobalexim.com/logo.png`.
+
 ## Run locally
 
 1. **Install dependencies**

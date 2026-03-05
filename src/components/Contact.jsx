@@ -78,7 +78,7 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="font-heading text-3xl font-semibold text-white md:text-4xl"
         >
-          Get in Touch
+          Contact Us
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
@@ -202,6 +202,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === 'sending'}
+            aria-label="Send inquiry"
             className="w-full rounded-lg bg-gold px-6 py-3 font-medium text-dark transition hover:bg-gold-light disabled:opacity-70 sm:w-auto"
           >
             {status === 'sending' ? 'Sending...' : 'Send Inquiry'}

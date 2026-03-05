@@ -21,7 +21,10 @@ export default function Footer() {
         <div className=" flex justify-center">
           <img
             src={footerLogo}
-            alt="Krishva Global Exim"
+            alt="Krishva Global Exim Pvt Ltd Logo"
+            loading="lazy"
+            width="240"
+            height="96"
             className="h-28 w-auto object-contain md:h-48"
           />
         </div>

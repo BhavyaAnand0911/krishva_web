@@ -18,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="font-heading text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
         >
-          Global Trade. Trusted Partnerships.
+          Krishva Global Exim Pvt Ltd
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

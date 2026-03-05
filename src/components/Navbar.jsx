@@ -25,13 +25,14 @@ export default function Navbar() {
       transition={{ duration: 0.4 }}
       className="fixed top-0 left-0 right-0 z-50 overflow-visible bg-primary shadow-md"
     >
-      <nav className="mx-auto flex h-18 max-w-6xl items-center justify-between overflow-visible px-4 md:px-6">
+      <nav className="mx-auto flex h-18 max-w-6xl items-center justify-between overflow-visible px-4 md:px-6" aria-label="Main navigation">
         <a
           href="#hero"
           onClick={(e) => scrollTo(e, '#hero')}
           className="flex items-center"
+          aria-label="Krishva Global Exim - Home"
         >
-          <img src={logo} alt="Krishva Global Exim" className="h-28 w-auto object-contain object-left md:h-28" />
+          <img src={logo} alt="Krishva Global Exim Pvt Ltd Logo" width="140" height="56" className="h-28 w-auto object-contain object-left md:h-28" />
         </a>
 
         {/* Desktop menu */}
