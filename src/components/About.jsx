@@ -38,7 +38,7 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="font-heading text-3xl font-semibold text-white md:text-4xl"
         >
-          About Krishva Global Exim
+          About Krishva
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,17 +48,13 @@ export default function About() {
           className="mt-6 max-w-3xl space-y-4 text-white/85"
         >
           <p>
-            Krishva Global Exim Pvt Ltd is an India-based export company focused
-            on delivering high-quality products to international markets.
+            Krishva Global Exim Pvt Ltd was founded by Bhavya Anand and Aditya Tyagi—two ambitious entrepreneurs who started the company with a simple belief: Indian products deserve stronger representation on the world stage. Based in India, we exist to connect trusted Indian manufacturers with international buyers and to build lasting relationships in global trade.
           </p>
           <p>
-            We collaborate with trusted manufacturers and suppliers across India
-            to ensure consistent quality, competitive pricing, and reliable
-            supply chains.
+            We work closely with vetted manufacturers and suppliers across the country to deliver consistent quality, competitive pricing, and reliable supply chains. Transparency, professionalism, and dependable logistics are at the heart of everything we do. Whether it is textiles, automobile parts, or custom bulk orders, we bring a modern, energetic approach to international trade—backed by strict quality standards and a commitment to doing business the right way.
           </p>
           <p>
-            Our mission is to build long-term international partnerships through
-            transparency, quality assurance, and dependable logistics.
+            We may be young in age, but our vision is global. Krishva Global Exim is here to grow with you, one shipment and one partnership at a time.
           </p>
         </motion.div>
 

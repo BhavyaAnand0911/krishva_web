@@ -15,7 +15,7 @@ export default function Footer() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="overflow-visible bg-primary py-1.5"
+      className="overflow-visible bg-gray-700 py-1.5"
     >
       <div className="mx-auto max-w-6xl px-3 md:px-4">
         <div className=" flex justify-center">

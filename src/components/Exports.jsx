@@ -7,9 +7,9 @@ const categories = [
       'High-quality cotton garments and textile materials sourced from trusted Indian manufacturers.',
   },
   {
-    title: 'Agricultural Commodities',
+    title: 'Automobile Parts',
     description:
-      'Export-grade agricultural products sourced directly from producers.',
+      'Quality automobile parts and components sourced from trusted Indian manufacturers.',
   },
   {
     title: 'Customized Bulk Orders',

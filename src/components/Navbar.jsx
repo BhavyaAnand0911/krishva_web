@@ -23,7 +23,7 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="fixed top-0 left-0 right-0 z-50 overflow-visible bg-primary shadow-md"
+      className="fixed top-0 left-0 right-0 z-50 overflow-visible bg-gray-700 shadow-md"
     >
       <nav className="mx-auto flex h-18 max-w-6xl items-center justify-between overflow-visible px-4 md:px-6" aria-label="Main navigation">
         <a
@@ -83,7 +83,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="overflow-hidden border-t border-white/20 bg-primary md:hidden"
+            className="overflow-hidden border-t border-white/20 bg-gray-700 md:hidden"
           >
             <ul className="flex flex-col gap-1 px-4 py-4">
               {navLinks.map(({ label, href }) => (

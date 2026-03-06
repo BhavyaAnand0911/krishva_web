@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import heroImage from '../assets/hero.png';
 
 export default function Hero() {
   const scrollTo = (e, id) => {
@@ -11,6 +12,36 @@ export default function Hero() {
       id="hero"
       className="relative flex min-h-screen items-center justify-center overflow-hidden bg-primary"
     >
+      {/* Ship image – between blue and text, with fade-in and subtle float */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.2 }}
+        animate={{
+          opacity: 1,
+          scale: 1.27,
+          y: [0, -6, 0],
+        }}
+        transition={{
+          opacity: { duration: 1, ease: [0.25, 0.46, 0.45, 0.94] },
+          scale: { duration: 1, ease: [0.25, 0.46, 0.45, 0.94] },
+          y: {
+            duration: 5,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          },
+        }}
+        className="absolute inset-0 z-0"
+      >
+        <img
+          src={heroImage}
+          alt=""
+          className="h-full w-full object-cover opacity-50"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/55 to-primary/92"
+          aria-hidden
+        />
+      </motion.div>
+
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
@@ -18,7 +49,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="font-heading text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
         >
-          Krishva Global Exim Pvt Ltd
+          KRISHVA GLOBAL EXIM PVT LTD
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
