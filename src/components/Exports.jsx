@@ -20,14 +20,14 @@ const categories = [
 
 export default function Exports() {
   return (
-    <section id="exports" className="flex min-h-screen items-center bg-primary py-20 md:py-28">
-      <div className="mx-auto w-full max-w-6xl px-4 md:px-6">
+    <section id="exports" className="flex min-h-screen min-h-[100vh] items-center bg-secondary py-20 md:py-[80px]">
+      <div className="mx-auto w-full max-w-[1200px] px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5 }}
-          className="font-heading text-3xl font-semibold text-white md:text-4xl"
+          className="font-heading text-3xl font-semibold text-accent md:text-[32px]"
         >
           What We Export
         </motion.h2>
@@ -36,7 +36,7 @@ export default function Exports() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-4 max-w-2xl text-white/85"
+          className="mt-4 max-w-2xl text-base leading-[1.7] text-white/90"
         >
           Categories of products we export to international markets.
         </motion.p>
@@ -49,10 +49,10 @@ export default function Exports() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              whileHover={{ y: -4 }}
-              className="rounded-xl border border-white/20 bg-secondary p-6 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20"
+              whileHover={{ y: -6 }}
+              className="export-card-bg rounded-[14px] border-2 border-accent p-8 transition-shadow hover:shadow-[0_10px_25px_rgba(0,0,0,0.2)]"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gold/20 text-gold">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/20 text-accent">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -70,7 +70,9 @@ export default function Exports() {
               <h3 className="mt-4 font-heading text-lg font-semibold text-white">
                 {card.title}
               </h3>
-              <p className="mt-2 text-white/85">{card.description}</p>
+              <p className="mt-2 text-base leading-[1.7] text-white/85">
+                {card.description}
+              </p>
             </motion.div>
           ))}
         </div>

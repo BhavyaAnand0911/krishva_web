@@ -1,24 +1,80 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand palette from official logo */
-  --color-primary: #0A2E57;
-  --color-secondary: #123F73;
-  --color-gold: #D4A017;
-  --color-gold-light: #F1C96B;
-  --color-dark: #0B0B0B;
-  --font-heading: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-body: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* Premium global trade palette */
+  --color-primary: #052242;
+  --color-secondary: #0A355E;
+  --color-accent: #C9981E;
+  --color-accent-hover: #b48416;
+  --color-light: #F7F7F7;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Lato", sans-serif;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
+
   body {
-    @apply font-body bg-primary text-white antialiased;
+    font-family: "Lato", sans-serif !important;
+    font-weight: 400;
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-semibold;
+
+  h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700 !important;
   }
+
+  h2 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600 !important;
+  }
+
+  h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600 !important;
+  }
+
+  /* Menu links – Montserrat Medium (500) */
+  nav ul a {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important;
+  }
+
+  /* Buttons – Montserrat Medium (500) */
+  button,
+  [type="submit"],
+  a.rounded-lg.bg-accent,
+  a.rounded-lg.border-2 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important;
+  }
+
+  /* Any explicit font-heading usage */
+  .font-heading {
+    font-family: "Montserrat", sans-serif !important;
+  }
+}
+
+/* Navbar gradient - dark edges, lighter center */
+.navbar-gradient {
+  background: linear-gradient(
+    90deg,
+    #052242 0%,
+    #0a355e 35%,
+    #1c6ea4 50%,
+    #0a355e 65%,
+    #052242 100%
+  );
+}
+
+/* Export card gradient */
+.export-card-bg {
+  background: linear-gradient(145deg, #0a355e, #052242);
 }

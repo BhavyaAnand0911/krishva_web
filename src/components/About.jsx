@@ -29,23 +29,23 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="flex min-h-screen items-center bg-secondary py-20 md:py-28">
-      <div className="mx-auto w-full max-w-6xl px-4 md:px-6">
+    <section id="about" className="flex min-h-screen items-center bg-white py-20 md:py-[80px]">
+      <div className="mx-auto w-full max-w-[1200px] px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5 }}
-          className="font-heading text-3xl font-semibold text-white md:text-4xl"
+          className="font-heading text-3xl font-semibold text-accent md:text-[32px]"
         >
-          About Krishva
+          About Krishva Global Exim
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-6 max-w-3xl space-y-4 text-white/85"
+          className="mt-6 max-w-3xl space-y-4 text-base leading-[1.7] text-[#444444]"
         >
           <p>
             Krishva Global Exim Pvt Ltd was founded by Bhavya Anand and Aditya Tyagi—two ambitious entrepreneurs who started the company with a simple belief: Indian products deserve stronger representation on the world stage. Based in India, we exist to connect trusted Indian manufacturers with international buyers and to build lasting relationships in global trade.
@@ -66,10 +66,10 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="rounded-xl border border-white/20 bg-primary/80 p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/20"
+              className="rounded-xl border border-gray-200 bg-light p-6 transition-shadow hover:shadow-md"
             >
-              <div className="text-gold">{item.icon}</div>
-              <h3 className="mt-4 font-heading font-semibold text-white">
+              <div className="text-accent">{item.icon}</div>
+              <h3 className="mt-4 font-heading font-semibold text-primary">
                 {item.title}
               </h3>
             </motion.div>

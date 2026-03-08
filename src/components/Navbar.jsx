@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../assets/logo.png';
+import logoNav1 from '../assets/logo_nav1.png';
+import logoNav2 from '../assets/logo_nav2.png';
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Exports', href: '#exports' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'ABOUT', href: '#about' },
+  { label: 'EXPORT', href: '#exports' },
+  { label: 'CONTACT', href: '#contact' },
 ];
 
 export default function Navbar() {
@@ -23,26 +24,37 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="fixed top-0 left-0 right-0 z-50 overflow-visible bg-gray-700 shadow-md"
+      className="navbar-gradient fixed top-0 left-0 right-0 z-50 h-20 shadow-md"
     >
-      <nav className="mx-auto flex h-18 max-w-6xl items-center justify-between overflow-visible px-4 md:px-6" aria-label="Main navigation">
+      <nav
+        className="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6 md:px-[60px]"
+        aria-label="Main navigation"
+      >
         <a
           href="#hero"
           onClick={(e) => scrollTo(e, '#hero')}
           className="flex items-center"
-          aria-label="Krishva Global Exim - Home"
+          aria-label="Krishva Global - Home"
         >
-          <img src={logo} alt="Krishva Global Exim Pvt Ltd Logo" width="140" height="56" className="h-28 w-auto object-contain object-left md:h-28" />
+          <img
+            src={logoNav1}
+            alt=""
+            className="h-28 w-auto md:h-42"
+          />
+          <img
+            src={logoNav2}
+            alt="Krishva Global"
+            className="h-34 w-auto md:h-66"
+          />
         </a>
 
-        {/* Desktop menu */}
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-8 md:flex md:gap-10">
           {navLinks.map(({ label, href }) => (
             <li key={href}>
               <a
                 href={href}
                 onClick={(e) => scrollTo(e, href)}
-                className="text-sm font-medium text-white/90 transition-colors hover:text-white"
+                className="font-heading text-base font-medium tracking-[0.5px] text-white transition-colors duration-300 hover:text-accent"
               >
                 {label}
               </a>
@@ -50,7 +62,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile hamburger */}
         <button
           type="button"
           aria-label="Toggle menu"
@@ -75,7 +86,6 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -83,15 +93,15 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="overflow-hidden border-t border-white/20 bg-gray-700 md:hidden"
+            className="navbar-gradient overflow-hidden border-t border-white/20 md:hidden"
           >
-            <ul className="flex flex-col gap-1 px-4 py-4">
+            <ul className="flex flex-col gap-1 px-6 py-4">
               {navLinks.map(({ label, href }) => (
                 <li key={href}>
                   <a
                     href={href}
                     onClick={(e) => scrollTo(e, href)}
-                    className="block rounded-lg px-3 py-2 text-white/90 hover:bg-white/10 hover:text-white"
+                    className="block rounded-lg px-3 py-2 font-heading text-base font-medium text-white transition-colors hover:bg-white/10 hover:text-accent"
                   >
                     {label}
                   </a>

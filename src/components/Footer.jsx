@@ -15,9 +15,9 @@ export default function Footer() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="overflow-visible bg-gray-700 py-1.5"
+      className="overflow-visible bg-primary py-8"
     >
-      <div className="mx-auto max-w-6xl px-3 md:px-4">
+      <div className="mx-auto max-w-[1200px] px-6">
         <div className=" flex justify-center">
           <img
             src={footerLogo}
@@ -25,7 +25,7 @@ export default function Footer() {
             loading="lazy"
             width="240"
             height="96"
-            className="h-28 w-auto object-contain md:h-48"
+            className="h-28 w-auto object-contain md:h-60"
           />
         </div>
         <div className="mt-1 flex flex-col items-center gap-0.5 text-center md:flex-row md:items-center md:justify-between md:text-left">
