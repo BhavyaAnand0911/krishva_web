@@ -48,7 +48,7 @@ export default function About() {
           className="mt-6 max-w-3xl space-y-4 text-base leading-[1.7] text-[#444444]"
         >
           <p>
-            Krishva Global Exim Pvt Ltd was founded by Bhavya Anand and Aditya Tyagi—two ambitious entrepreneurs who started the company with a simple belief: Indian products deserve stronger representation on the world stage. Based in India, we exist to connect trusted Indian manufacturers with international buyers and to build lasting relationships in global trade.
+            Krishva Global Exim Pvt Ltd was founded by two ambitious entrepreneurs who started the company with a simple belief: Indian products deserve stronger representation on the world stage. Based in India, we exist to connect trusted Indian manufacturers with international buyers and to build lasting relationships in global trade.
           </p>
           <p>
             We work closely with vetted manufacturers and suppliers across the country to deliver consistent quality, competitive pricing, and reliable supply chains. Transparency, professionalism, and dependable logistics are at the heart of everything we do. Whether it is textiles, automobile parts, or custom bulk orders, we bring a modern, energetic approach to international trade—backed by strict quality standards and a commitment to doing business the right way.
